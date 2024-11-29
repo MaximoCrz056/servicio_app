@@ -85,7 +85,7 @@ class HomePage extends StatelessWidget {
 
   Widget _buildQuickActions() {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 16),
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
       child: Row(
         children: [
           Expanded(
@@ -115,7 +115,7 @@ class HomePage extends StatelessWidget {
       required String title,
       required String subtitle}) {
     return SizedBox(
-      width: 171,
+      width: 160,
       height: 208,
       child: Card(
         color: Colors.white.withOpacity(0.9),
@@ -154,12 +154,12 @@ class HomePage extends StatelessWidget {
     required int daysRemaining,
   }) {
     return SizedBox(
-      width: 171,
+      width: 160,
       height: 208,
       child: Card(
         color: Colors.white.withOpacity(0.9),
         child: Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(10.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -189,7 +189,9 @@ class HomePage extends StatelessWidget {
                       child: CircularProgressIndicator(
                         value: progress,
                         strokeWidth: 5,
-                        backgroundColor: const Color.fromARGB(255, 100, 100, 100).withOpacity(0.6),
+                        backgroundColor:
+                            const Color.fromARGB(255, 100, 100, 100)
+                                .withOpacity(0.6),
                         valueColor: const AlwaysStoppedAnimation<Color>(
                             Color.fromRGBO(19, 138, 54, 1)),
                       ),
